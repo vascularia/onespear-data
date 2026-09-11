@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-11T17:00:46Z",
+ "generated": "2026-09-11T17:10:50Z",
  "source": "Candhis — Cerema — Licence Ouverte Etalab v2.0",
  "count": 17,
  "buoys": [
@@ -35,11 +35,11 @@
    "lat": 46.9238333,
    "lon": -2.4679167,
    "facade": "atlantique",
-   "time": "2026-09-11T16:30:00Z",
+   "time": "2026-09-11T17:00:00Z",
    "h13": 0.9,
-   "hmax": 1.5,
-   "th13": 7.5,
-   "dirPeak": 276.0,
+   "hmax": 1.6,
+   "th13": 7.4,
+   "dirPeak": 278.0,
    "seaTemp": 19.8
   },
   {
