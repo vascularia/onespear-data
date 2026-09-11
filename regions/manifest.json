@@ -1,0 +1,115 @@
+{
+ "schema": 2,
+ "regions": [
+  {
+   "id": "atlantique",
+   "name": "Façade France (Atlantique + Manche)",
+   "bbox": {
+    "latS": 43.3,
+    "latN": 51.2,
+    "lonW": -5.5,
+    "lonE": 2.0
+   },
+   "resolutionM": 15000,
+   "source": "MARS2D MANGA700",
+   "current": {
+    "url": "regions/atlantique/current_atlas.json",
+    "bytes": 4467297,
+    "maxDistanceDeg": 0.06
+   }
+  },
+  {
+   "id": "sudbzh",
+   "name": "Sud Bretagne (Quiberon/Belle-Île/Morbihan)",
+   "bbox": {
+    "latS": 47.15,
+    "latN": 47.85,
+    "lonW": -3.65,
+    "lonE": -2.35
+   },
+   "resolutionM": 500,
+   "source": "MARS2D SUDBZH250",
+   "current": {
+    "url": "regions/sudbzh/current_atlas.json",
+    "bytes": 5788716,
+    "maxDistanceDeg": 0.007
+   }
+  },
+  {
+   "id": "manche-ouest",
+   "name": "Manche-Ouest (St-Malo/Chausey/Anglo-Normandes/Raz Blanchard)",
+   "bbox": {
+    "latS": 48.6,
+    "latN": 49.95,
+    "lonW": -2.95,
+    "lonE": -1.4
+   },
+   "resolutionM": 500,
+   "source": "MARS2D MANW250",
+   "current": {
+    "url": "regions/manche-ouest/current_atlas.json",
+    "bytes": 18460471,
+    "maxDistanceDeg": 0.007
+   }
+  },
+  {
+   "id": "aquitaine",
+   "name": "Aquitaine (Pays Basque/Arcachon/Gironde)",
+   "bbox": {
+    "latS": 43.3,
+    "latN": 45.75,
+    "lonW": -1.85,
+    "lonE": -1.0
+   },
+   "resolutionM": 500,
+   "source": "MARS2D AQUI250",
+   "current": {
+    "url": "regions/aquitaine/current_atlas.json",
+    "bytes": 14568188,
+    "maxDistanceDeg": 0.007
+   }
+  },
+  {
+   "id": "manche-est",
+   "name": "Manche-Est (Baie de Seine / Normandie)",
+   "bbox": {
+    "latS": 49.2,
+    "latN": 50.35,
+    "lonW": -1.75,
+    "lonE": 1.65
+   },
+   "resolutionM": 500,
+   "source": "MARS2D MANE250",
+   "current": {
+    "url": "regions/manche-est/current_atlas.json",
+    "bytes": 18985725,
+    "maxDistanceDeg": 0.007
+   }
+  },
+  {
+   "id": "nordbzh",
+   "name": "Nord-Bretagne (Abers/Portsall/Ouessant N → Morlaix)",
+   "bbox": {
+    "latS": 48.45,
+    "latN": 49.15,
+    "lonW": -5.35,
+    "lonE": -3.15
+   },
+   "resolutionM": 700,
+   "source": "MARS2D MANGA700 (plein, 90 j)",
+   "current": {
+    "url": "regions/nordbzh/current_atlas.json",
+    "bytes": 6324200,
+    "maxDistanceDeg": 0.01
+   }
+  }
+ ],
+ "tide": {
+  "facade": {
+   "url": "tide/atlas_facade.json",
+   "bytes": 2911431,
+   "maxDistanceDeg": 0.06,
+   "calibrated": "REFMAR 2025"
+  }
+ }
+}

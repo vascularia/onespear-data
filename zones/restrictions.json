@@ -1,0 +1,415 @@
+{
+  "_comment": "Couche curatée (zones précises GPS + danger Rance + cantonnements Finistère numérisés des arrêtés — annexe DDTM29 + relevés cartes 7150/7122). NON exhaustif, vérifier l'arrêté ; tracés 'uncertainty: elevee' = alignements approximés.",
+  "zones": [
+    {
+      "name": "Zone militaire RASCAS (rade de Brest)",
+      "espece": "toutes",
+      "methode": "toutes",
+      "periode": "temporaire (activation militaire)",
+      "uncertainty": "faible",
+      "source": "Arrêté préf. maritime Atlantique — polygone RASCAS",
+      "circle": {
+        "lat": 48.300556,
+        "lon": -4.400833,
+        "radiusM": 1000
+      }
+    },
+    {
+      "name": "Anse de Kerguelen (Lorient)",
+      "espece": "toutes",
+      "methode": "toutes",
+      "periode": "permanente",
+      "uncertainty": "moyenne",
+      "source": "Arrêté Bretagne 192/97 — concession",
+      "circle": {
+        "lat": 47.691667,
+        "lon": -3.405,
+        "radiusM": 300
+      }
+    },
+    {
+      "name": "Cantonnement crustacés Est de Belle-Île",
+      "espece": "crustaces",
+      "methode": "toutes",
+      "periode": "permanente",
+      "uncertainty": "faible",
+      "source": "Arrêté préf. (coordonnées GPS)",
+      "polygon": [
+        [
+          [
+            47.3075,
+            -3.0203
+          ],
+          [
+            47.3075,
+            -2.9833
+          ],
+          [
+            47.2908,
+            -2.9833
+          ],
+          [
+            47.2908,
+            -3.0203
+          ]
+        ]
+      ],
+      "note": "Réserve à crustacés — pêche sous-marine interdite."
+    },
+    {
+      "name": "Épave du Nautilus",
+      "espece": "toutes",
+      "methode": "toutes",
+      "periode": "permanente",
+      "uncertainty": "faible",
+      "source": "Arrêté préf. (coordonnées GPS)",
+      "circle": {
+        "lat": 46.1844,
+        "lon": -1.5492,
+        "radiusM": 80
+      },
+      "note": "Plongée/PSM interdite à 50 m de l'épave."
+    },
+    {
+      "name": "Fort Boyard",
+      "espece": "toutes",
+      "methode": "toutes",
+      "periode": "permanente",
+      "uncertainty": "faible",
+      "source": "Arrêté préf. (coordonnées GPS)",
+      "circle": {
+        "lat": 46.0011,
+        "lon": -1.2156,
+        "radiusM": 500
+      },
+      "note": "Plongée/PSM interdite à 500 m du fort."
+    },
+    {
+      "name": "Rance — barrage / bassin aval (ZONE INTERDITE — DANGER courants)",
+      "kind": "danger",
+      "espece": "toutes",
+      "methode": "toutes",
+      "periode": "permanente (stricte)",
+      "uncertainty": "moyenne",
+      "source": "Préf. maritime / EDF — usine marémotrice de la Rance",
+      "polygon": [
+        [
+          [
+            48.632,
+            -2.0215
+          ],
+          [
+            48.639,
+            -2.009
+          ],
+          [
+            48.636,
+            -2.001
+          ],
+          [
+            48.63,
+            -1.992
+          ],
+          [
+            48.625,
+            -1.985
+          ],
+          [
+            48.62,
+            -1.992
+          ],
+          [
+            48.6178,
+            -1.999
+          ],
+          [
+            48.6172,
+            -2.015
+          ],
+          [
+            48.6178,
+            -2.021
+          ],
+          [
+            48.624,
+            -2.022
+          ]
+        ]
+      ],
+      "note": "⚠️ INTERDIT — barrage marémoteur : courants TRÈS violents (lâchers), danger mortel. Tout le plan d'eau aval."
+    },
+    {
+      "name": "Cantonnement Les Méloines (baie de Morlaix) — chasse sous-marine INTERDITE",
+      "espece": "toutes",
+      "methode": "casiers, engins à crustacés, pêche sous-marine, goémon",
+      "periode": "permanente",
+      "uncertainty": "elevee",
+      "source": "Arrêté 1696 MMP.1 du 09/04/1964 mod. 2313 MMP 18/05/1965 (limites par alignements — tracé approché)",
+      "polygon": [
+        [
+          [
+            48.775,
+            -3.92
+          ],
+          [
+            48.775,
+            -3.815
+          ],
+          [
+            48.715,
+            -3.8
+          ],
+          [
+            48.705,
+            -3.905
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "Cantonnement de Kerlouan (Pontusval) — tous engins interdits sauf lignes/palangres",
+      "espece": "toutes",
+      "methode": "tous engins sauf lignes et palangres (chasse sous-marine incluse)",
+      "periode": "permanente",
+      "uncertainty": "moyenne",
+      "source": "Arrêté 3617 MMP.1 03/08/1966 mod. 2882 P5 01/08/1969 & 636 P4 01/03/1971 (sommets relevés carte 7150)",
+      "polygon": [
+        [
+          [
+            48.6917,
+            -4.4008
+          ],
+          [
+            48.7063,
+            -4.3808
+          ],
+          [
+            48.6983,
+            -4.3325
+          ],
+          [
+            48.6903,
+            -4.3368
+          ],
+          [
+            48.6825,
+            -4.3747
+          ],
+          [
+            48.675,
+            -4.3883
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "Cantonnement de l'Île-Vierge / Guern — chasse sous-marine INTERDITE",
+      "espece": "toutes",
+      "methode": "casiers, engins à crustacés, pêche sous-marine, herbes marines",
+      "periode": "permanente",
+      "uncertainty": "moyenne",
+      "source": "Arrêté 872 du 01/03/1963 mod. 1577 MMP1 01/04/1964 & 2882 P5 1969 (sommets relevés carte 7150)",
+      "polygon": [
+        [
+          [
+            48.662,
+            -4.6283
+          ],
+          [
+            48.6853,
+            -4.5107
+          ],
+          [
+            48.655,
+            -4.509
+          ],
+          [
+            48.6517,
+            -4.62
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "Cantonnement du Libenter (Aberwrac'h) — chasse sous-marine INTERDITE",
+      "espece": "toutes",
+      "methode": "casiers, engins à crustacés, pêche sous-marine, herbes marines",
+      "periode": "permanente",
+      "uncertainty": "elevee",
+      "source": "Arrêté 872 du 01/03/1963 mod. 1577 MMP1 (limites par alignements — tracé approché sur le plateau du Libenter)",
+      "polygon": [
+        [
+          [
+            48.645,
+            -4.665
+          ],
+          [
+            48.645,
+            -4.6
+          ],
+          [
+            48.612,
+            -4.593
+          ],
+          [
+            48.605,
+            -4.658
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "Cantonnement de Portsall — tous engins interdits sauf lignes/palangres",
+      "espece": "toutes",
+      "methode": "tous engins sauf lignes et palangres (chasse sous-marine incluse)",
+      "periode": "permanente",
+      "uncertainty": "moyenne",
+      "source": "Arrêté 3617 MMP.1 1966 mod. 1969/1971 (sommets relevés carte 7150)",
+      "polygon": [
+        [
+          [
+            48.6117,
+            -4.7583
+          ],
+          [
+            48.593,
+            -4.7307
+          ],
+          [
+            48.5713,
+            -4.7533
+          ],
+          [
+            48.5777,
+            -4.7758
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "Cantonnement du Conquet — tous engins interdits sauf lignes/palangres",
+      "espece": "toutes",
+      "methode": "tous engins sauf lignes et palangres (chasse sous-marine incluse)",
+      "periode": "permanente",
+      "uncertainty": "moyenne",
+      "source": "Arrêté 3617 MMP.1 1966 mod. 1969/1971 (sommets relevés carte 7122)",
+      "polygon": [
+        [
+          [
+            48.3742,
+            -4.84
+          ],
+          [
+            48.3703,
+            -4.7862
+          ],
+          [
+            48.3372,
+            -4.7743
+          ],
+          [
+            48.325,
+            -4.83
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "Cantonnement Mer d'Iroise (Chaussée de Sein) — filets/casiers/nasses/chaluts interdits (CSM non visée)",
+      "espece": "toutes",
+      "methode": "filets, casiers, nasses, chaluts — la chasse sous-marine n'est PAS visée par l'arrêté",
+      "periode": "permanente",
+      "uncertainty": "faible",
+      "source": "Arrêté 2018-16293 du 26/06/2018 (coordonnées GPS de l'arrêté)",
+      "polygon": [
+        [
+          [
+            48.0667,
+            -5.1275
+          ],
+          [
+            48.0833,
+            -4.95
+          ],
+          [
+            48.0333,
+            -4.95
+          ],
+          [
+            48.05,
+            -5.1275
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "Cantonnement de Lervily (Audierne) — chasse sous-marine INTERDITE",
+      "espece": "toutes",
+      "methode": "casiers, engins à crustacés, pêche sous-marine",
+      "periode": "permanente",
+      "uncertainty": "elevee",
+      "source": "Arrêté 1452/P.5 du 12/04/1968 (côte / ligne des 30 m / phare de Lervily — tracé approché)",
+      "polygon": [
+        [
+          [
+            48.011,
+            -4.588
+          ],
+          [
+            48.008,
+            -4.558
+          ],
+          [
+            47.993,
+            -4.556
+          ],
+          [
+            47.991,
+            -4.59
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "Récif artificiel « Le Cochon » (Port Manec'h) — TOUTE PÊCHE INTERDITE",
+      "espece": "toutes",
+      "methode": "toutes (y compris chasse sous-marine)",
+      "periode": "permanente",
+      "uncertainty": "faible",
+      "source": "Arrêté 3570 P4 du 22/11/1972 — cercle 500 m autour de l'habitat artificiel",
+      "circle": {
+        "lat": 47.78556,
+        "lon": -3.74306,
+        "radiusM": 500
+      }
+    },
+    {
+      "name": "Cantonnement de Doëlan — crustacés interdits toutes méthodes (y compris chasse sous-marine)",
+      "espece": "crustaces",
+      "methode": "toutes méthodes y compris pêche sous-marine",
+      "periode": "permanente",
+      "uncertainty": "elevee",
+      "source": "Arrêté 2868 MMP.1 du 16/06/1966 (alignements + parallèle 47°45'N — tracé approché)",
+      "polygon": [
+        [
+          [
+            47.781,
+            -3.7
+          ],
+          [
+            47.783,
+            -3.606
+          ],
+          [
+            47.75,
+            -3.606
+          ],
+          [
+            47.75,
+            -3.7
+          ]
+        ]
+      ]
+    }
+  ]
+}
