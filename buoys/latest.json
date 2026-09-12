@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-12T05:30:43Z",
+ "generated": "2026-09-12T05:40:43Z",
  "source": "Candhis — Cerema — Licence Ouverte Etalab v2.0",
  "count": 17,
  "buoys": [
@@ -35,12 +35,12 @@
    "lat": 46.9238333,
    "lon": -2.4679167,
    "facade": "atlantique",
-   "time": "2026-09-12T05:00:00Z",
-   "h13": 0.6,
-   "hmax": 1.0,
-   "th13": 6.3,
-   "dirPeak": 274.0,
-   "seaTemp": 18.4
+   "time": "2026-09-12T05:30:00Z",
+   "h13": 0.7,
+   "hmax": 1.3,
+   "th13": 6.9,
+   "dirPeak": 271.0,
+   "seaTemp": 18.6
   },
   {
    "code": "03302",
