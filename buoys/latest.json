@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-15T16:31:16Z",
+ "generated": "2026-09-15T16:41:05Z",
  "source": "Candhis — Cerema — Licence Ouverte Etalab v2.0",
  "count": 18,
  "stations": [
@@ -35,12 +35,12 @@
    "lat": 46.9238333,
    "lon": -2.4679167,
    "facade": "atlantique",
-   "t": "2026-09-15T16:00:00Z",
-   "hs": 0.9,
-   "hmax": 1.5,
-   "tp": 4.3,
-   "dp": 296.0,
-   "wt": 19.2
+   "t": "2026-09-15T16:30:00Z",
+   "hs": 1.0,
+   "hmax": 1.7,
+   "tp": 4.2,
+   "dp": 302.0,
+   "wt": 19.1
   },
   {
    "id": "03302",
