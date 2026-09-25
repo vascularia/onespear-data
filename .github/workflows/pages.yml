@@ -1,0 +1,36 @@
+name: Deploy Pages
+
+# Déploiement Pages piloté par Actions (au lieu du déploiement automatique
+# « legacy »), avec CONTRÔLE DE CONCURRENCE : les nombreux crons de données
+# (bouées horaires, avurnav/courants/vagues plusieurs fois par jour…) poussent
+# souvent ; sans ça, deux déploiements se chevauchent et GitHub Pages fait
+# échouer le plus ancien (« Deployment failed, try again later »). Ici le
+# déploiement périmé est proprement ANNULÉ, pas mis en échec.
+on:
+  push:
+    branches: [main]
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: '.'
+      - id: deployment
+        uses: actions/deploy-pages@v4
