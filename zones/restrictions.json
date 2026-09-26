@@ -288843,6 +288843,144 @@
       ],
       "texte": "§ 1.1 (p. 8) : « Conformément à l'article R5333-24 du Code des transports, la pêche et le ramassage des végétaux, coquillages et animaux marins sont interdits dans les limites administratives du GPMM en dehors des cas prévus ci-après par le RPP […] ». § 1.3 (p. 8) : « Seuls les espaces définis dans les annexes cartographiques peuvent être utilisés pour la pratique de la pêche […] ». § 2.3.1 (p. 12, pêche sous-marine) : « La pêche sous-marine est autorisée à partir de la terre ou depuis une embarcation. Elle ne peut se pratiquer que dans les espaces naturels accessibles au grand public, en dehors des chenaux, passes et terminaux, notamment dans les zones telles que précisées dans l'annexe 1. Dans les limites du GPMM, il est interdit aux pêcheurs sous-marins de s'approcher à moins de 200 mètres des navires ou embarcations en pêche, ainsi que des engins de pêche signalés par un balisage apparent ; de s'approcher à moins de 200 mètres des navires de commerce en manœuvre, à quai ou au mouillage. » § 1.4.3 (p. 9) : « Anse de Carteau : La navigation, le mouillage, le stationnement, la pêche sont interdits à l'intérieur et dans un périmètre de 100 m autour de la concession conchylicole de Carteau. »",
       "texte_ref": "Arrêté préfectoral n° 13-2020-07-22-002 du 22/07/2020 (DDTM 13) portant règlement particulier de police des pêches dans les limites administratives du Grand Port Maritime de Marseille (RAA 13-2020-181) — sources/gpmm_rppp_peche_2020_arrete_13-2020-07-22-002.pdf"
+    },
+    {
+      "name": "Champ de tir en mer de la batterie du fort de Toulbroc'h (Plouzané)",
+      "kind": "activable",
+      "espece": "toutes",
+      "methode": "toutes",
+      "periode": "activable, voir avis (horaires non publiés)",
+      "uncertainty": "moyenne",
+      "source": "Plan IGN (cartes.gouv.fr), couche limite_lin, symbole LIM_CHAMP_TIR (champ de tir en mer de la batterie du fort de Toulbroc'h), 10 sommets lus dans les tuiles vectorielles z13 (~5 m) et découpés sur la mer (OSM) (tool/zones/toulbroch_champ_tir.py). Absent de PING et d'OSM ; aucun arrêté ni horaire retrouvé",
+      "note": "Champ de tir de la batterie de Toulbroc'h entre l'anse de Bertheaume et le Petit Minou. Les jours de tir ne sont pas publiés ici : avant de chasser dans ce secteur, consulter les avis (AVURNAV Premar Atlantique, sémaphore). Distinct de la zone aérienne R195.",
+      "polygon": [
+        [
+          [
+            48.33975,
+            -4.63135
+          ],
+          [
+            48.33947,
+            -4.63008
+          ],
+          [
+            48.33945,
+            -4.62959
+          ],
+          [
+            48.33936,
+            -4.62953
+          ],
+          [
+            48.33919,
+            -4.62981
+          ],
+          [
+            48.33914,
+            -4.62973
+          ],
+          [
+            48.33895,
+            -4.62982
+          ],
+          [
+            48.33859,
+            -4.63031
+          ],
+          [
+            48.3386,
+            -4.62985
+          ],
+          [
+            48.33853,
+            -4.62936
+          ],
+          [
+            48.33836,
+            -4.6295
+          ],
+          [
+            48.33829,
+            -4.62974
+          ],
+          [
+            48.33816,
+            -4.62981
+          ],
+          [
+            48.33812,
+            -4.62964
+          ],
+          [
+            48.33835,
+            -4.62919
+          ],
+          [
+            48.33832,
+            -4.62873
+          ],
+          [
+            48.33815,
+            -4.62897
+          ],
+          [
+            48.33797,
+            -4.62908
+          ],
+          [
+            48.33789,
+            -4.62904
+          ],
+          [
+            48.33799,
+            -4.62871
+          ],
+          [
+            48.3379,
+            -4.62846
+          ],
+          [
+            48.33808,
+            -4.62792
+          ],
+          [
+            48.33771,
+            -4.62833
+          ],
+          [
+            48.33761,
+            -4.62798
+          ],
+          [
+            48.33762,
+            -4.62723
+          ],
+          [
+            48.33775,
+            -4.62672
+          ],
+          [
+            48.32865,
+            -4.63233
+          ],
+          [
+            48.31595,
+            -4.67503
+          ],
+          [
+            48.33388,
+            -4.6836
+          ],
+          [
+            48.33947,
+            -4.63856
+          ],
+          [
+            48.33975,
+            -4.63135
+          ]
+        ]
+      ]
     }
   ]
 }
