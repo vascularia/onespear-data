@@ -288969,6 +288969,148 @@
           ]
         ]
       ]
+    },
+    {
+      "name": "Kerroch — port (jetée – la Frégate) — chasse sous-marine INTERDITE",
+      "espece": "toutes",
+      "methode": "pêche sous-marine",
+      "periode": "permanente",
+      "uncertainty": "moyenne",
+      "source": "Arrêté 192/97 du 30/05/1997, art. 11 a) (Lorient) : à l'E de la ligne extrémité de la jetée – immeuble « la Frégate ». Lu sur le raster SHOM : tireté magenta du bout de la jetée à la Frégate (position utilisateur) ; zone = bassin du port de Kerroc'h, fermé au N par ce tireté et à l'O par la jetée. Découpé sur la côte OSM (tool/zones/morbihan.py)",
+      "polygon": [
+        [
+          [
+            47.70294,
+            -3.45904
+          ],
+          [
+            47.70269,
+            -3.45887
+          ],
+          [
+            47.70262,
+            -3.45874
+          ],
+          [
+            47.70255,
+            -3.45874
+          ],
+          [
+            47.70243,
+            -3.45906
+          ],
+          [
+            47.70253,
+            -3.45921
+          ],
+          [
+            47.70251,
+            -3.45941
+          ],
+          [
+            47.70209,
+            -3.45932
+          ],
+          [
+            47.70195,
+            -3.45919
+          ],
+          [
+            47.70187,
+            -3.45951
+          ],
+          [
+            47.70176,
+            -3.45935
+          ],
+          [
+            47.70157,
+            -3.45932
+          ],
+          [
+            47.70137,
+            -3.45971
+          ],
+          [
+            47.70121,
+            -3.46039
+          ],
+          [
+            47.7015,
+            -3.46037
+          ],
+          [
+            47.70156,
+            -3.46049
+          ],
+          [
+            47.70153,
+            -3.46074
+          ],
+          [
+            47.70157,
+            -3.46098
+          ],
+          [
+            47.70166,
+            -3.46092
+          ],
+          [
+            47.70168,
+            -3.46096
+          ],
+          [
+            47.7016,
+            -3.46118
+          ],
+          [
+            47.70166,
+            -3.46137
+          ],
+          [
+            47.70176,
+            -3.46136
+          ],
+          [
+            47.7018,
+            -3.46141
+          ],
+          [
+            47.70174,
+            -3.46157
+          ],
+          [
+            47.70187,
+            -3.46166
+          ],
+          [
+            47.70185,
+            -3.46173
+          ],
+          [
+            47.70174,
+            -3.46177
+          ],
+          [
+            47.70161,
+            -3.46171
+          ],
+          [
+            47.7015,
+            -3.46197
+          ],
+          [
+            47.70209,
+            -3.46233
+          ],
+          [
+            47.70294,
+            -3.45904
+          ]
+        ]
+      ],
+      "texte": "Quartier de Lorient : a) Kerroch : - à l'Est d'une ligne joignant l'extrémité de la jetée à l'amer dit immeuble « la frégate » ; - à l'intérieur d'une zone délimitée - au Nord par la côte - à l'Ouest par l'alignement de la tour du génie du Guermeur par la pointe du Talud - à l'Est par l'alignement de la tour du génie du Guermeur par la pointe de Ker Briscart - au sud par l'alignement de la tourelle des errants par la bouée cardinal Sud (épave de Locqueltas) ; b) Perello : au Nord du parallèle passant à l'extrémité de la cale ; c) Lomener : au Nord de la ligne joignant l'extrémité de la grande jetée à la cheminée remarquable du sanatorium de Kerpape ; d) anse de Kerguelen : zone de 300 m de rayon centrée sur le point latitude 47° 41.5' longitude : 0.3° 24.3' ; e) abords de Lorient : à l'intérieur d'une ligne joignant le clocher de Larmor à la pointe Ouest située au Sud de l'Anse du Goërem (clocher de Larmor au 305) ;",
+      "texte_ref": "Arrêté régional 192/97 du 30/05/1997, art. 11"
     }
   ]
 }
