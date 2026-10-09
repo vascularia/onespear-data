@@ -1,0 +1,69 @@
+{
+ "generated": "2026-10-09T14:20:46Z",
+ "source": "Préfecture maritime de l'Atlantique — prévision hebdomadaire indicative, arrêté 2026/012 (seuls les AVIRADE à 48 h font foi)",
+ "arrete": "2026-012-PREMAR ATL",
+ "page": "https://www.premar-atlantique.gouv.fr/page/zones-d-evolution-des-drones-de-la-marine-nationale",
+ "pdf": "https://www.premar-atlantique.gouv.fr/uploads/atlantique/pages/e769fcdaaf7ef3692693895d5fd792b8.pdf",
+ "semaine": "12 octobre au 16 octobre 2026",
+ "centres": {
+  "Avant-goulet": {
+   "lat": 48.3133,
+   "lon": -4.6572
+  },
+  "Goulet": {
+   "lat": 48.3358,
+   "lon": -4.5731
+  },
+  "Nord-Ouest rade": {
+   "lat": 48.3506,
+   "lon": -4.522
+  },
+  "Nord-Est rade": {
+   "lat": 48.3569,
+   "lon": -4.4894
+  },
+  "Sud-Ouest rade": {
+   "lat": 48.3285,
+   "lon": -4.5172
+  },
+  "Sud-Est rade": {
+   "lat": 48.3281,
+   "lon": -4.4789
+  },
+  "Lanvéoc": {
+   "lat": 48.3091,
+   "lon": -4.4585
+  },
+  "Rascas": {
+   "lat": 48.3027,
+   "lon": -4.4072
+  }
+ },
+ "jours": [
+  {
+   "date": "2026-10-12",
+   "zones": {},
+   "transit": {}
+  },
+  {
+   "date": "2026-10-13",
+   "zones": {},
+   "transit": {}
+  },
+  {
+   "date": "2026-10-14",
+   "zones": {},
+   "transit": {}
+  },
+  {
+   "date": "2026-10-15",
+   "zones": {},
+   "transit": {}
+  },
+  {
+   "date": "2026-10-16",
+   "zones": {},
+   "transit": {}
+  }
+ ]
+}
