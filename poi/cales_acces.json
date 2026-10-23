@@ -1,0 +1,914 @@
+{
+ "_comment": "Base ÉDITABLE des cales de mise à l'eau. Champs maree: {type:'pm',hours}=PM±h · {type:'permanence',saufBmCoef?}=toujours sauf autour de la BM au-delà du coef · {type:'hauteurMin',metres}. cout: gratuite|payante. verifie:false = information non vérifiée, à recouper sur le terrain. Positions approximatives (au port). Servi via onespear-data (poi/cales_acces.json), repli asset.",
+ "cales": [
+  {
+   "id": "locquirec",
+   "name": "Locquirec",
+   "lat": 48.693768,
+   "lon": -3.647796,
+   "verifie": false,
+   "source": "information non vérifiée",
+   "maree": {
+    "type": "pm",
+    "hours": 1.5
+   },
+   "remarque": "Accessible autour de la pleine mer uniquement",
+   "osmId": "osm:n7418442347"
+  },
+  {
+   "id": "diben",
+   "name": "Le Diben (Plougasnou)",
+   "lat": 48.710194,
+   "lon": -3.829158,
+   "verifie": false,
+   "source": "information non vérifiée",
+   "maree": {
+    "type": "pm",
+    "hours": 5
+   },
+   "remarque": "Belle cale",
+   "osmId": "osm:w881739619"
+  },
+  {
+   "id": "terenez_port",
+   "name": "Térénez — port (Plouezoc'h)",
+   "lat": 48.667254,
+   "lon": -3.85441,
+   "verifie": false,
+   "source": "information non vérifiée",
+   "maree": {
+    "type": "pm",
+    "hours": 3
+   },
+   "osmId": "osm:w884233269"
+  },
+  {
+   "id": "terenez_anse",
+   "name": "Anse de Térénez",
+   "lat": 48.667254,
+   "lon": -3.85441,
+   "verifie": false,
+   "source": "information non vérifiée",
+   "osmId": "osm:w884233269"
+  },
+  {
+   "id": "carantec_est",
+   "name": "Carantec — cale Est",
+   "lat": 48.669869,
+   "lon": -3.907014,
+   "verifie": false,
+   "source": "information non vérifiée",
+   "maree": {
+    "type": "pm",
+    "hours": 3
+   },
+   "remarque": "Belle cale",
+   "osmId": "osm:n2390486554"
+  },
+  {
+   "id": "carantec_ouest",
+   "name": "Carantec — cale Ouest",
+   "lat": 48.672536,
+   "lon": -3.922835,
+   "verifie": false,
+   "source": "information non vérifiée",
+   "maree": {
+    "type": "pm",
+    "hours": 3
+   },
+   "osmId": "osm:n863835927"
+  },
+  {
+   "id": "roscoff_sud",
+   "name": "Roscoff — cale Sud (vieux port)",
+   "lat": 48.723068,
+   "lon": -3.980264,
+   "verifie": false,
+   "source": "information non vérifiée",
+   "maree": {
+    "type": "pm",
+    "hours": 1.5
+   },
+   "remarque": "Facile d'utilisation, autour de la PM",
+   "osmId": "osm:n7920783311"
+  },
+  {
+   "id": "bloscon",
+   "name": "Roscoff — port du Bloscon",
+   "lat": 48.718592,
+   "lon": -3.967422,
+   "verifie": false,
+   "source": "information non vérifiée",
+   "maree": {
+    "type": "permanence"
+   },
+   "remarque": "Utilisable en permanence ; étroite mais accessible",
+   "osmId": "osm:w243356006"
+  },
+  {
+   "id": "lilia",
+   "name": "Plouguerneau — Lilia",
+   "lat": 48.623621,
+   "lon": -4.557886,
+   "verifie": false,
+   "source": "information non vérifiée",
+   "maree": {
+    "type": "pm",
+    "hours": 2
+   },
+   "remarque": "Facile d'utilisation",
+   "osmId": "osm:n4361610372"
+  },
+  {
+   "id": "perros_plg",
+   "name": "Plouguerneau — Perros (grande cale)",
+   "lat": 48.6072,
+   "lon": -4.5069,
+   "verifie": false,
+   "source": "information non vérifiée",
+   "maree": {
+    "type": "pm",
+    "hours": 4
+   },
+   "remarque": "Belle et large"
+  },
+  {
+   "id": "kerbrez",
+   "name": "Lannilis — Kerbrez",
+   "lat": 48.594607,
+   "lon": -4.557038,
+   "verifie": false,
+   "source": "information non vérifiée",
+   "maree": {
+    "type": "pm",
+    "hours": 4
+   },
+   "remarque": "Belle et large — nom/position à confirmer",
+   "osmId": "osm:n3284707409"
+  },
+  {
+   "id": "paluden",
+   "name": "Lannilis — Paluden",
+   "lat": 48.594607,
+   "lon": -4.557038,
+   "verifie": false,
+   "source": "information non vérifiée",
+   "maree": {
+    "type": "pm",
+    "hours": 4
+   },
+   "remarque": "Longue et large",
+   "osmId": "osm:n3284707409"
+  },
+  {
+   "id": "le_vil",
+   "name": "Landéda — Le Vil (Aber Benoît)",
+   "lat": 48.575319,
+   "lon": -4.608112,
+   "verifie": false,
+   "source": "information non vérifiée",
+   "maree": {
+    "type": "pm",
+    "hours": 2
+   },
+   "remarque": "Attention : usage professionnel prioritaire",
+   "osmId": "osm:n5656655541"
+  },
+  {
+   "id": "aber_wrach",
+   "name": "Aber Wrac'h",
+   "lat": 48.597229,
+   "lon": -4.559578,
+   "verifie": false,
+   "source": "information non vérifiée",
+   "maree": {
+    "type": "pm",
+    "hours": 5
+   },
+   "remarque": "Facile d'utilisation ; praticable dès ~2,5 m d'eau",
+   "osmId": "osm:n7920408571"
+  },
+  {
+   "id": "stellach",
+   "name": "Saint-Pabu — Stellac'h (Aber Benoît)",
+   "lat": 48.572635,
+   "lon": -4.644494,
+   "verifie": false,
+   "source": "information non vérifiée",
+   "maree": {
+    "type": "pm",
+    "hours": 3
+   },
+   "cout": "gratuite",
+   "remarque": "Facile d'utilisation",
+   "osmId": "osm:w818123337"
+  },
+  {
+   "id": "portsall",
+   "name": "Portsall — port",
+   "lat": 48.56336,
+   "lon": -4.703737,
+   "verifie": false,
+   "source": "information non vérifiée",
+   "maree": {
+    "type": "pm",
+    "hours": 2
+   },
+   "osmId": "osm:n12619154581"
+  },
+  {
+   "id": "tremazan",
+   "name": "Portsall — Trémazan",
+   "lat": 48.55905,
+   "lon": -4.715752,
+   "verifie": false,
+   "source": "information non vérifiée",
+   "maree": {
+    "type": "permanence",
+    "saufBmCoef": 95
+   },
+   "remarque": "En permanence sauf basse mer de vive-eau",
+   "osmId": "osm:n1483974425"
+  },
+  {
+   "id": "kerglonou",
+   "name": "Lampaul-Plouarzel — Kerglonou (Aber Ildut)",
+   "lat": 48.473067,
+   "lon": -4.753521,
+   "verifie": false,
+   "source": "information non vérifiée",
+   "maree": {
+    "type": "hauteurMin",
+    "metres": 2.6
+   },
+   "osmId": "osm:w504643859"
+  },
+  {
+   "id": "conquet2",
+   "name": "Le Conquet — cale 2",
+   "lat": 48.361048,
+   "lon": -4.777333,
+   "verifie": false,
+   "source": "information non vérifiée",
+   "maree": {
+    "type": "pm",
+    "hours": 3
+   },
+   "remarque": "Pas de stationnement à proximité",
+   "osmId": "osm:n1482711965"
+  },
+  {
+   "id": "berthaume",
+   "name": "Plougonvelin — Bertheaume",
+   "lat": 48.339362,
+   "lon": -4.699802,
+   "verifie": false,
+   "source": "information non vérifiée",
+   "maree": {
+    "type": "permanence",
+    "saufBmCoef": 80
+   },
+   "remarque": "En permanence sauf basse mer par coef > 80",
+   "osmId": "osm:n1482710286"
+  },
+  {
+   "id": "dellec",
+   "name": "Plouzané — Le Dellec",
+   "lat": 48.354079,
+   "lon": -4.565897,
+   "verifie": false,
+   "source": "information non vérifiée",
+   "maree": {
+    "type": "permanence",
+    "saufBmCoef": 90
+   },
+   "remarque": "En permanence sauf basse mer par coef > 90 ; tirant d'eau parking 1,90 m",
+   "osmId": "osm:n275415604"
+  },
+  {
+   "id": "maison_blanche",
+   "name": "Brest — Maison Blanche",
+   "lat": 48.36332,
+   "lon": -4.530328,
+   "verifie": false,
+   "source": "information non vérifiée",
+   "maree": {
+    "type": "pm",
+    "hours": 5
+   },
+   "osmId": "osm:n3535117473"
+  },
+  {
+   "id": "moulin_blanc",
+   "name": "Brest — Moulin Blanc",
+   "lat": 48.389302,
+   "lon": -4.432612,
+   "verifie": false,
+   "source": "information non vérifiée",
+   "maree": {
+    "type": "permanence"
+   },
+   "cout": "gratuite",
+   "remarque": "Facile d'utilisation",
+   "osmId": "osm:w847937170"
+  },
+  {
+   "id": "camaret",
+   "name": "Camaret — Vauban",
+   "lat": 48.279629,
+   "lon": -4.592761,
+   "verifie": false,
+   "source": "information non vérifiée",
+   "maree": {
+    "type": "pm",
+    "hours": 4
+   },
+   "osmId": "osm:n2086141276"
+  },
+  {
+   "id": "morgat",
+   "name": "Crozon — Morgat",
+   "lat": 48.22387,
+   "lon": -4.497778,
+   "verifie": false,
+   "source": "information non vérifiée",
+   "maree": {
+    "type": "permanence",
+    "saufBmCoef": 95
+   },
+   "cout": "payante",
+   "remarque": "En permanence sauf basse mer par gros coefficient",
+   "osmId": "osm:n7908883368"
+  },
+  {
+   "id": "porslous",
+   "name": "Porslous (presqu'île de Crozon — à localiser)",
+   "lat": 48.24,
+   "lon": -4.47,
+   "verifie": false,
+   "source": "information non vérifiée",
+   "maree": {
+    "type": "pm",
+    "hours": 3
+   },
+   "remarque": "Position incertaine, à confirmer"
+  },
+  {
+   "id": "cameros",
+   "name": "Cameros (à localiser)",
+   "lat": 48.22,
+   "lon": -4.53,
+   "verifie": false,
+   "source": "information non vérifiée",
+   "maree": {
+    "type": "pm",
+    "hours": 3
+   },
+   "remarque": "Position incertaine, à confirmer"
+  },
+  {
+   "id": "dz_cale2",
+   "name": "Douarnenez — cale 2 (Rosmeur)",
+   "lat": 48.096596,
+   "lon": -4.322002,
+   "verifie": false,
+   "source": "information non vérifiée",
+   "maree": {
+    "type": "permanence",
+    "saufBmCoef": 100
+   },
+   "osmId": "osm:n2424438112"
+  },
+  {
+   "id": "dz_cale3",
+   "name": "Douarnenez — cale 3",
+   "lat": 48.092413,
+   "lon": -4.333494,
+   "verifie": false,
+   "source": "information non vérifiée",
+   "maree": {
+    "type": "permanence"
+   },
+   "osmId": "osm:w1385752437"
+  },
+  {
+   "id": "treboul",
+   "name": "Douarnenez — port de Tréboul",
+   "lat": 48.096507,
+   "lon": -4.340757,
+   "verifie": false,
+   "source": "information non vérifiée",
+   "maree": {
+    "type": "permanence",
+    "saufBmCoef": 100
+   },
+   "osmId": "osm:w824685021"
+  },
+  {
+   "id": "ste_evette",
+   "name": "Audierne — Sainte-Évette",
+   "lat": 48.006109,
+   "lon": -4.554343,
+   "verifie": false,
+   "source": "information non vérifiée",
+   "osmId": "osm:n845839608"
+  },
+  {
+   "id": "pompiers",
+   "name": "Audierne — cale des pompiers",
+   "lat": 48.023332,
+   "lon": -4.538266,
+   "verifie": false,
+   "source": "information non vérifiée",
+   "remarque": "Belle cale — accès marée à confirmer",
+   "osmId": "osm:n845839610"
+  },
+  {
+   "id": "kerity",
+   "name": "Penmarc'h — Kérity",
+   "lat": 47.797117,
+   "lon": -4.354236,
+   "verifie": false,
+   "source": "information non vérifiée",
+   "maree": {
+    "type": "pm",
+    "hours": 3
+   },
+   "osmId": "osm:n632827982"
+  },
+  {
+   "id": "guilvinec",
+   "name": "Le Guilvinec — port",
+   "lat": 47.79368,
+   "lon": -4.278932,
+   "verifie": false,
+   "source": "information non vérifiée",
+   "maree": {
+    "type": "permanence"
+   },
+   "osmId": "osm:w1040644043"
+  },
+  {
+   "id": "loctudy",
+   "name": "Loctudy",
+   "lat": 47.835881,
+   "lon": -4.176071,
+   "verifie": false,
+   "source": "loctudy.fr",
+   "maree": {
+    "type": "permanence",
+    "saufBmCoef": 100
+   },
+   "cout": "payante",
+   "remarque": "Gratuite pour les titulaires d'un poste à l'année/hivernage ; remorque sur parking dédié",
+   "osmId": "osm:n8016594786"
+  },
+  {
+   "id": "trevignon",
+   "name": "Trévignon (Trégunc)",
+   "lat": 47.793718,
+   "lon": -3.8532,
+   "verifie": false,
+   "source": "information non vérifiée",
+   "remarque": "Cale pentue, accès Glénan",
+   "osmId": "osm:n1613210740"
+  },
+  {
+   "id": "pen_mane",
+   "name": "Locmiquélic — Pen Mané",
+   "lat": 47.734531,
+   "lon": -3.347901,
+   "verifie": false,
+   "source": "information non vérifiée",
+   "cout": "gratuite",
+   "remarque": "Belle cale, accès libre",
+   "osmId": "osm:w1337739067"
+  },
+  {
+   "id": "port_louis",
+   "name": "Port-Louis / Kernevel",
+   "lat": 47.708678,
+   "lon": -3.352878,
+   "verifie": false,
+   "source": "information non vérifiée",
+   "cout": "payante",
+   "remarque": "Peu chère",
+   "osmId": "osm:n7907784481"
+  },
+  {
+   "id": "ste_catherine",
+   "name": "Locmiquélic — Sainte-Catherine",
+   "lat": 47.724537,
+   "lon": -3.351386,
+   "verifie": false,
+   "source": "information non vérifiée",
+   "maree": {
+    "type": "permanence",
+    "saufBmCoef": 80
+   },
+   "remarque": "Coefficient > 80 nécessaire (à vérifier)",
+   "osmId": "osm:n1893271490"
+  },
+  {
+   "id": "bararach",
+   "name": "Séné — Barrarac'h (golfe du Morbihan)",
+   "lat": 47.604924,
+   "lon": -2.740124,
+   "verifie": false,
+   "source": "information non vérifiée",
+   "cout": "gratuite",
+   "remarque": "Cale départementale ; parking gratuit à Langle, forte affluence le week-end",
+   "osmId": "osm:w616343597"
+  },
+  {
+   "id": "crouesty",
+   "name": "Le Crouesty",
+   "lat": 47.549581,
+   "lon": -2.908538,
+   "verifie": false,
+   "source": "information non vérifiée",
+   "cout": "payante",
+   "remarque": "Capitainerie 02 97 53 73 33",
+   "osmId": "osm:w691419683"
+  },
+  {
+   "id": "parun",
+   "name": "Baden — port du Parun",
+   "lat": 47.615,
+   "lon": -2.911,
+   "verifie": false,
+   "source": "information non vérifiée",
+   "remarque": "Chantier Le Borgne"
+  },
+  {
+   "id": "st_philibert",
+   "name": "Saint-Philibert",
+   "lat": 47.579025,
+   "lon": -3.012251,
+   "verifie": false,
+   "source": "information non vérifiée",
+   "cout": "payante",
+   "remarque": "Via chantier ; pontons privés",
+   "osmId": "osm:w167319798"
+  },
+  {
+   "id": "locmariaquer",
+   "name": "Locmariaquer",
+   "lat": 47.57,
+   "lon": -2.943446,
+   "verifie": false,
+   "source": "information non vérifiée",
+   "cout": "payante",
+   "remarque": "≈10 € l'aller-retour ; cale large et pentue",
+   "osmId": "osm:w974601657"
+  },
+  {
+   "id": "arradon",
+   "name": "Arradon",
+   "lat": 47.616003,
+   "lon": -2.827903,
+   "verifie": false,
+   "source": "information non vérifiée",
+   "cout": "payante",
+   "remarque": "Entrée étroite",
+   "osmId": "osm:w633677858"
+  },
+  {
+   "id": "vannes",
+   "name": "Vannes — fond du port",
+   "lat": 47.64246,
+   "lon": -2.760749,
+   "verifie": false,
+   "source": "information non vérifiée",
+   "remarque": "Très large",
+   "osmId": "osm:n1741605365"
+  },
+  {
+   "id": "arzal",
+   "name": "Arzal (Vilaine, eau douce)",
+   "lat": 47.499336,
+   "lon": -2.378669,
+   "verifie": false,
+   "source": "information non vérifiée",
+   "maree": {
+    "type": "permanence"
+   },
+   "cout": "gratuite",
+   "remarque": "Hors marée (amont barrage)",
+   "osmId": "osm:n5919350277"
+  },
+  {
+   "id": "foleux",
+   "name": "Foleux (Vilaine, eau douce)",
+   "lat": 47.5175,
+   "lon": -2.2789,
+   "verifie": false,
+   "source": "information non vérifiée",
+   "maree": {
+    "type": "permanence"
+   },
+   "cout": "gratuite",
+   "remarque": "Hors marée ; parking agréable"
+  },
+  {
+   "id": "croisic",
+   "name": "Le Croisic",
+   "lat": 47.295071,
+   "lon": -2.511607,
+   "verifie": false,
+   "source": "information non vérifiée",
+   "cout": "gratuite",
+   "remarque": "Vaste parking",
+   "osmId": "osm:n5893635912"
+  },
+  {
+   "id": "pouliguen",
+   "name": "Le Pouliguen",
+   "lat": 47.276151,
+   "lon": -2.427032,
+   "verifie": false,
+   "source": "information non vérifiée",
+   "cout": "payante",
+   "remarque": "≈15 € mise à l'eau + 15 € sortie si jours différents ; mât à coucher",
+   "osmId": "osm:n5922424780"
+  },
+  {
+   "id": "pornichet",
+   "name": "Pornichet — vieux port",
+   "lat": 47.260821,
+   "lon": -2.34291,
+   "verifie": false,
+   "source": "information non vérifiée",
+   "cout": "payante",
+   "remarque": "Stationnement remorque compliqué",
+   "osmId": "osm:n1758751398"
+  },
+  {
+   "id": "port_olona",
+   "name": "Les Sables-d'Olonne — Port Olona",
+   "lat": 46.496898,
+   "lon": -1.796411,
+   "verifie": false,
+   "source": "information non vérifiée",
+   "maree": {
+    "type": "permanence"
+   },
+   "cout": "payante",
+   "remarque": "Tarif modéré (jetons capitainerie) ; grande cale, 4 bateaux en simultané",
+   "osmId": "osm:n2741081155"
+  },
+  {
+   "id": "st_gilles",
+   "name": "Saint-Gilles-Croix-de-Vie — cale du Kiosque",
+   "lat": 46.69627,
+   "lon": -1.944069,
+   "verifie": false,
+   "source": "information non vérifiée",
+   "osmId": "osm:n6712452340"
+  },
+  {
+   "id": "herbaudiere",
+   "name": "Noirmoutier — L'Herbaudière",
+   "lat": 47.02642,
+   "lon": -2.297259,
+   "verifie": false,
+   "source": "information non vérifiée",
+   "remarque": "Attention aux cailloux en approche",
+   "osmId": "osm:w706468720"
+  },
+  {
+   "id": "bourgenay",
+   "name": "Bourgenay",
+   "lat": 46.439203,
+   "lon": -1.675765,
+   "verifie": false,
+   "source": "information non vérifiée",
+   "remarque": "Entrée délicate par mauvais temps",
+   "osmId": "osm:n6528536730"
+  },
+  {
+   "id": "royan",
+   "name": "Royan (près capitainerie)",
+   "lat": 45.619426,
+   "lon": -1.029019,
+   "verifie": false,
+   "source": "information non vérifiée",
+   "cout": "payante",
+   "remarque": "Bateaux < 750 kg",
+   "osmId": "osm:n1282221326"
+  },
+  {
+   "id": "bonne_anse",
+   "name": "La Palmyre — Bonne Anse",
+   "lat": 45.6906,
+   "lon": -1.1633,
+   "verifie": false,
+   "source": "information non vérifiée"
+  },
+  {
+   "id": "soubise",
+   "name": "Soubise (Charente)",
+   "lat": 45.929135,
+   "lon": -1.00656,
+   "verifie": false,
+   "source": "information non vérifiée",
+   "remarque": "Plus de 20 m de long, 8 m de large, bon état",
+   "osmId": "osm:w414093380"
+  },
+  {
+   "id": "ars_en_re",
+   "name": "Île de Ré — Ars-en-Ré",
+   "lat": 46.211426,
+   "lon": -1.511718,
+   "verifie": false,
+   "source": "information non vérifiée",
+   "cout": "gratuite",
+   "remarque": "Cale confortable, chenal d'accès",
+   "osmId": "osm:w485096071"
+  },
+  {
+   "id": "re_nord",
+   "name": "Île de Ré — nord (Pertuis Breton)",
+   "lat": 46.229067,
+   "lon": -1.441198,
+   "verifie": false,
+   "source": "information non vérifiée",
+   "maree": {
+    "type": "pm",
+    "hours": 3
+   },
+   "cout": "gratuite",
+   "remarque": "Dès cote 4,40 m ; peu fréquentée, parking libre hors saison — position à préciser",
+   "osmId": "osm:n8224173302"
+  },
+  {
+   "id": "st_denis_oleron",
+   "name": "Oléron — Saint-Denis",
+   "lat": 46.037195,
+   "lon": -1.368966,
+   "verifie": false,
+   "source": "information non vérifiée",
+   "cout": "payante",
+   "osmId": "osm:n6691336750"
+  },
+  {
+   "id": "fouras",
+   "name": "Fouras",
+   "lat": 45.983996,
+   "lon": -1.094366,
+   "verifie": false,
+   "source": "information non vérifiée",
+   "remarque": "Port géré par le Département 17",
+   "osmId": "osm:n7860594118"
+  },
+  {
+   "id": "port_des_barques",
+   "name": "Port-des-Barques",
+   "lat": 45.95219,
+   "lon": -1.0565,
+   "verifie": false,
+   "source": "information non vérifiée",
+   "remarque": "Port géré par le Département 17",
+   "osmId": "osm:w414502344"
+  },
+  {
+   "id": "le_chapus",
+   "name": "Le Chapus (Bourcefranc)",
+   "lat": 45.855533,
+   "lon": -1.17008,
+   "verifie": false,
+   "source": "information non vérifiée",
+   "remarque": "Port géré par le Département 17",
+   "osmId": "osm:n7638706546"
+  },
+  {
+   "id": "claouey",
+   "name": "Arcachon — Claouey",
+   "lat": 44.7431,
+   "lon": -1.1969,
+   "verifie": false,
+   "source": "information non vérifiée",
+   "cout": "payante",
+   "remarque": "Parcmètre ≈3 € la 1ère heure pour l'attelage"
+  },
+  {
+   "id": "piraillan",
+   "name": "Arcachon — Piraillan",
+   "lat": 44.692919,
+   "lon": -1.232168,
+   "verifie": false,
+   "source": "information non vérifiée",
+   "maree": {
+    "type": "pm",
+    "hours": 3
+   },
+   "cout": "payante",
+   "remarque": "Tributaire de la marée ; places limitées",
+   "osmId": "osm:w606322225"
+  },
+  {
+   "id": "barbotiere",
+   "name": "Gujan-Mestras — La Barbotière",
+   "lat": 44.643785,
+   "lon": -1.066708,
+   "verifie": false,
+   "source": "information non vérifiée",
+   "maree": {
+    "type": "pm",
+    "hours": 3
+   },
+   "cout": "gratuite",
+   "remarque": "Cale large ; tributaire de la marée",
+   "osmId": "osm:n2892028803"
+  },
+  {
+   "id": "le_teich",
+   "name": "Le Teich (Leyre)",
+   "lat": 44.640301,
+   "lon": -1.01875,
+   "verifie": false,
+   "source": "information non vérifiée",
+   "maree": {
+    "type": "pm",
+    "hours": 3
+   },
+   "remarque": "Tributaire de la marée",
+   "osmId": "osm:n1302159305"
+  },
+  {
+   "id": "estaque",
+   "name": "Marseille — l'Estaque",
+   "lat": 43.36118,
+   "lon": 5.307806,
+   "verifie": false,
+   "source": "information non vérifiée",
+   "maree": {
+    "type": "permanence"
+   },
+   "cout": "gratuite",
+   "remarque": "Grande cale, très fréquentée le week-end",
+   "osmId": "osm:w553864281"
+  },
+  {
+   "id": "carro",
+   "name": "Carro (Côte Bleue)",
+   "lat": 43.329338,
+   "lon": 5.041322,
+   "verifie": false,
+   "source": "information non vérifiée",
+   "maree": {
+    "type": "permanence"
+   },
+   "osmId": "osm:n13970928677"
+  },
+  {
+   "id": "frontignan",
+   "name": "Frontignan",
+   "lat": 43.43406,
+   "lon": 3.771751,
+   "verifie": false,
+   "source": "information non vérifiée",
+   "maree": {
+    "type": "permanence"
+   },
+   "cout": "payante",
+   "remarque": "Peu chère ; s'adresser à la capitainerie",
+   "osmId": "osm:n1191224645"
+  },
+  {
+   "id": "marseillan",
+   "name": "Marseillan",
+   "lat": 43.319134,
+   "lon": 3.558224,
+   "verifie": false,
+   "source": "information non vérifiée",
+   "maree": {
+    "type": "permanence"
+   },
+   "remarque": "Cale large, à côté de l'aire de carénage",
+   "osmId": "osm:n1272199837"
+  },
+  {
+   "id": "banyuls",
+   "name": "Banyuls-sur-Mer",
+   "lat": 42.4822,
+   "lon": 3.1289,
+   "verifie": false,
+   "source": "information non vérifiée",
+   "maree": {
+    "type": "permanence"
+   }
+  },
+  {
+   "id": "cerbere",
+   "name": "Cerbère",
+   "lat": 42.4406,
+   "lon": 3.1653,
+   "verifie": false,
+   "source": "information non vérifiée",
+   "maree": {
+    "type": "permanence"
+   }
+  }
+ ]
+}
