@@ -30,6 +30,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      # `verif/` (archives de vérification houle et surcote, ~100 Mo/mois) n'est
+      # lu que par `git clone` (verif_houle, surcote), jamais par l'app : hors
+      # du site, sinon chaque déploiement le renvoie et finit par dépasser le
+      # délai de Pages. Le dépôt, lui, le garde.
+      - name: Retirer verif/ du site
+        run: rm -rf verif
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
