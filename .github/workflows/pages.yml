@@ -17,6 +17,15 @@ permissions:
   contents: read
   pages: write
   id-token: write
+  deployments: read
+
+# Un déploiement sur ~10 reste bloqué côté GitHub (`syncing_files`) jusqu'au
+# délai de 10 min ; le suivant (≤ 5 min plus tard, radar) republie tout `main`
+# et le rattrape. On n'échoue donc (= mail) qu'à partir de SEUIL_ECHECS
+# déploiements ratés À LA SUITE (~10 min chacun) ; `freshness.yml` reste la
+# sentinelle des données. Sur 43 h mesurées : seuil 2 = 7 alertes, 3 = 2, 4 = 1.
+env:
+  SEUIL_ECHECS: 3
 
 concurrency:
   group: pages
@@ -42,3 +51,30 @@ jobs:
           path: '.'
       - id: deployment
         uses: actions/deploy-pages@v4
+        continue-on-error: true
+      # Compte les échecs consécutifs dans l'API des déploiements (pas dans les
+      # runs : avec `continue-on-error` un run raté s'affiche « success »).
+      # Dernier état d'un déploiement : failure/error = raté, success/inactive
+      # = servi ; en attente ou en cours = un plus récent, ignoré, sauf le
+      # nôtre (même sha), qui vient d'échouer même si l'état n'est pas encore
+      # écrit.
+      - name: Alerter après plusieurs échecs à la suite
+        if: steps.deployment.outcome == 'failure'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          n=0
+          while IFS=$'\t' read -r id sha; do
+            etat=$(gh api "repos/$GITHUB_REPOSITORY/deployments/$id/statuses?per_page=1" --jq '.[0].state // ""')
+            case "$etat" in
+              failure|error) n=$((n+1)) ;;
+              success|inactive) break ;;
+              *) [ "$sha" = "$GITHUB_SHA" ] && n=$((n+1)) ;;
+            esac
+          done < <(gh api "repos/$GITHUB_REPOSITORY/deployments?environment=github-pages&per_page=30" --jq '.[] | [.id, .sha] | @tsv')
+          echo "Déploiements ratés à la suite : $n (seuil $SEUIL_ECHECS)"
+          if [ "$n" -ge "$SEUIL_ECHECS" ]; then
+            echo "::error::$n déploiements Pages ratés à la suite"
+            exit 1
+          fi
+          echo "::warning::Déploiement raté, rattrapé par le suivant ($n à la suite)"
